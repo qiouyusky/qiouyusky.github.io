@@ -11,11 +11,45 @@
       background: linear-gradient(135deg, #f5f7ff, #e8f0ff);
       color: #223;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
       min-height: 100vh;
       padding: 24px;
       box-sizing: border-box;
+    }
+
+    .navbar {
+      width: min(900px, 100%);
+      background: rgba(255, 255, 255, 0.94);
+      border-radius: 18px;
+      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+      margin-bottom: 18px;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(10px);
+    }
+
+    .navbar .logo {
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .navbar nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #345;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .navbar a:hover {
+      color: #1d4ed8;
     }
 
     .card {
@@ -50,16 +84,24 @@
   </style>
 </head>
 <body>
-  <div class="card">
-    <div class="hero">
-      <h1>fly~</h1>
-      <p>你好，这里是一个更好看的视频展示页。</p>
+    <header class="navbar">
+      <div class="logo">我的视频页</div>
+      <nav>
+        <a href="#home">首页</a>
+        <a href="#about">关于</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <div class="card">
+      <div class="hero" id="home">
+        <h1>fly~</h1>
+        <p>你好，这里是一个更好看的视频展示页。</p>
+      </div>
+      <video controls poster="poster.jpg">
+        <source src="video.mp4" type="video/mp4">
+        您的浏览器不支持视频播放。
+      </video>
     </div>
-    <video controls poster="poster.jpg">
-      <source src="video.mp4" type="video/mp4">
-      您的浏览器不支持视频播放。
-    </video>
-  </div>
-</body>
-</html>
+  </body>
 
