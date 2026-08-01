@@ -1,4 +1,4 @@
-# 这是一个使用github搭建的网站
+# 这是一个使用github搭建的网站（目前用于PCL_CE自定义主页！）
 ## 以下是搭建教程：
 [建议使用汉化脚本汉化github以获得最佳体验](https://github.com/maboloshi/github-chinese)
 #### 点击设置
